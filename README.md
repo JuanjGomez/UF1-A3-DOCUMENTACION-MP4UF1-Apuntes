@@ -21,3 +21,49 @@ El segundo comando es (git add readme.md), este sirve para subir una informació
 El tercer comando es (git commit -m "Título"), este sirve para capturar los cambios y prepararlo para subirlos además, se le puede poner un título entre comillas para dar un nombre al cambio que le haces.
 
 El último comando para subir la información es (git push origin main), este ejecuta los cambios insertandolo los cambios locales y al repositorio en línea.
+
+## Primer Capítulo: MARKDOWN
+
+Ahora pasamos a los comandos y claves que nos sirven en MarkDown, primero para tener este lenguaje de programación en Visual Studio Code debemos insertalo, hacemos clic en Extensiones y buscamos markdownlint, por último lo instalamos.
+
+Con este lenguaje podemos modificar nuestro texto. Para poder poner nuestro texto en cursiva, *Hay dos formas una es con asteriscos* (*texto*), usando dos asteriscos uno al inicio y otro al final del texto, este se pondra en cursiva automaticamente y _la segunda manera es con guiones bajos_ (_texto_), la otra forma es usando guiones bajos como en los asteriscos uno al inicio y otro al final del texto.
+
+Otro formato para dar al texto es ponerlo en negrita. **También haydos formas de poner en negrita**(**texto**), usando dos veces seguidas el asterisco al inicio y final del texto lo pone en negrita y __esta otra forma también puede funcionar__ (__texto__), con doble guiones bajos al inicio y final del texto sirve para poner en negrita.
+
+También se le puede poner el texto en negrita y cursiva al mismo tiempo ***como este ejemplo de negrita y cursiva*** (***texto***), de esta manera el texto saldrá en negrita y cursiva con tres astericos al inicio y final. ___De esta otra manera también se puede hacer las dos___ (___texto___), de esta otra fomra se puede hacer el texto en cursiva y negrita al inicio y final con tres guiones bajos.
+
+1. Primera opción de menú.
+2. Segunda opción de menú.
+3. Tercera opción de menú.
+
+De esta forma se puede crear una lista ordenada. Poniendo en orden de secuencia cada uno de los temas.
+
+* Primera opción de lista desordenada.
+* Segunda opción de lista desordenada.
+_ Tercera opción de lista desordenada.
+    1. Primer submenú.
+    2. Segundo submenú.
+_ Cuarta opción de lista desordenada.
+    * Tercer submenú.
+    * Cuarto submenú.
++ Quinta opción de lista desordenada.
++ Sexta opción de lista desordenada.
+
+Este es un ejemplo de lista desordenada, en ves de usar números para dar un orden a la lista. Para la lista desordenada se usa (*, _, +), estos simbolos se usa una vez al inicio para comenzar la lista desordenada y dentro de las lista tanto ordenada y desordenada se puede poner submenús, dando al tabulador y también se puede usar partes de una lista ordenada o desordenada como (1, 2, 3, etc, o *, +, _), con estas características podemos abrir en submenús.
+
+```
+    <html>
+    <head>
+    </head>
+    <body>
+        <p>Esto es un párrafo</p>
+    </body>
+<html>
+```
+
+Este es un ejemplo de etiqueta para HTML, para ayudar a otros usuarios les haga más facíl su trabajo le añadimos (```), al inicio, saltamos espacio y al terminar la etiqueta ponemos otras (```), al final, así se podrá copiar y será más sencillo.
+
+[Esto es un enlace](http://joan23.fje.edu "Enlace a la web del cole")
+
+Para añadir un enlace al repositorio se hace de esa manera, ahora al inicio se abre un ([texto]), lo que va dentro de corchete es la forma o texto en la que se ponga el enlace, ahora en el parentesis (enlace "Comentario del enalce"), en esta parte va el enlace y por último se hace un espacio y entre comillas se le añade un comentario que aparecer cuando la se ponga la flecha del mouse sobre esta.
+
