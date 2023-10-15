@@ -42,15 +42,11 @@ De esta forma se puede crear una lista ordenada. Poniendo en orden de secuencia 
 * Segunda opción de lista desordenada.
 
 _ Tercera opción de lista desordenada.
-   
     1. Primer submenú.
-   
     2. Segundo submenú.
 
 _ Cuarta opción de lista desordenada.
-    
     * Tercer submenú.
-    
     * Cuarto submenú.
 + Quinta opción de lista desordenada.
 + Sexta opción de lista desordenada.
@@ -67,7 +63,7 @@ Este es un ejemplo de lista desordenada, en ves de usar números para dar un ord
 <html>
 ```
 
-Este es un ejemplo de etiqueta para HTML, para ayudar a otros usuarios les haga más facíl su trabajo le añadimos tres comillas a la izquierda ("```"), al inicio, saltamos espacio y al terminar la etiqueta ponemos otras ("```"), al final, así se podrá copiar y será más sencillo.
+Este es un ejemplo de etiqueta para HTML, para ayudar a otros usuarios les haga más facíl su trabajo le añadimos tres comillas a la izquierda (``), al inicio, saltamos espacio y al terminar la etiqueta ponemos otras (```), al final, así se podrá copiar y será más sencillo.
 
 [Esto es un enlace](http://joan23.fje.edu "Enlace a la web del cole")
 
