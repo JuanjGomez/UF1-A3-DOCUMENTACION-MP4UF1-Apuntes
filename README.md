@@ -40,9 +40,11 @@ De esta forma se puede crear una lista ordenada. Poniendo en orden de secuencia 
 
 * Primera opción de lista desordenada.
 * Segunda opción de lista desordenada.
+
 _ Tercera opción de lista desordenada.
     1. Primer submenú.
     2. Segundo submenú.
+
 _ Cuarta opción de lista desordenada.
     * Tercer submenú.
     * Cuarto submenú.
@@ -66,4 +68,27 @@ Este es un ejemplo de etiqueta para HTML, para ayudar a otros usuarios les haga 
 [Esto es un enlace](http://joan23.fje.edu "Enlace a la web del cole")
 
 Para añadir un enlace al repositorio se hace de esa manera, ahora al inicio se abre un ([texto]), lo que va dentro de corchete es la forma o texto en la que se ponga el enlace, ahora en el parentesis (enlace "Comentario del enalce"), en esta parte va el enlace y por último se hace un espacio y entre comillas se le añade un comentario que aparecer cuando la se ponga la flecha del mouse sobre esta.
+
+![Esto es una imagen de informática](https://github.com/JuanjGomez/UF1-A3-DOCUMENTACION-MP4UF1-Apuntes/blob/main/Qu%C3%A9-se-hace-en-Inform%C3%A1tica.png "Informática")
+
+Ahora para poner una imagen y que este a la vez sea una enlace para entrar a otra página, primero se debe guardar una imagen en el carpeta de nuestro repositorio, luego subimos con los comandos del git en el cmd. Para entonces ya tendremos la imagen en nuestro repositorio, vamos ahi, copiamos el enlace de la imagen y acontinuación. se pone un signo de exclamación al inicio, ahora se abre corchete ([Aqui va un nombre a la imagen]), después se abre parentesis (Aqui va pegado el enlace "Comentario de la imagen"), dentro de los parentesis se pone el enlace y seguido entre comillas un comentario que salga de esa enlace-imagen.
+
+|Primera Col.|Segunda Col.|3 Col|
+|---------------|:------------:|---------:|
+|Col 2 es|Centrada|35€|
+|Col 3 es|Derecha|123€|
+|Estilo Cebra|Gris|Blanco|
+|Clase|ASIX1|M4|
+
+Ahora la introducción de tablas, en la primera línea como hroizontal van los nombres, en la segunda los guiones representa la cantidad de espacio que de da a cada uno también se puede alinear el texto al centro, izquierda y derecha. por ejemplo (|---------|) es izquierda, (:--------:) es centrada, (--------:) es derecha. Después de eso se pone la información en cada una de las columnas de la manera vertical, siempre dando margen con | para hacer la tabla y se le puede poner un estilo de colores asignando de esta manera (|Estilo cerba|Amarillo|azul|) de esa manera dará colores diferentes.
+
+-[ ] Opción A
+
+-[X] Opción B
+
+-[ ] Opción C
+
+A continuación se hace una lista en la cual es así ("-[X]") Eso dará formato a una lista de tareas y si son cumplidad en el medio va una X.
+
+## Segundo Capítulo: HTML
 
