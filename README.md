@@ -92,3 +92,22 @@ A continuación se hace una lista en la cual es así ("-[X]") Eso dará formato 
 
 ## Segundo Capítulo: HTML
 
+HTML es el código que se utiliza para estructurar y desplegar una página web.
+
+Para crear una página con HTML se debe tener un head donde que detalles y ajustes ponemos a la oagina y otra parte el body donde va el contenido de página.
+
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/02d480a03b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="book-solid.ico">
+    <title>Mi menú saludable</title>
+</head>
+```
+
+En este código que se puede copiar va a medida lo que debe estar adentro del head. 
+
+Primero antes de comenzar el (<head>) debemos poner (<!DOCTYPE html>) este comando informa al navegador que versión de HTML se usó para escribir el documento.
