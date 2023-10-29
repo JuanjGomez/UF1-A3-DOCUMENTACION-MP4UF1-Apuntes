@@ -104,10 +104,179 @@ Para crear una página con HTML se debe tener un head donde que detalles y ajust
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/02d480a03b.js" crossorigin="anonymous"></script>
     <link rel="icon" href="book-solid.ico">
-    <title>Mi menú saludable</title>
+    <title>Document</title>
 </head>
 ```
 
-En este código que se puede copiar va a medida lo que debe estar adentro del head. 
+En este código que se puede copiar va a medida lo que debe estar adentro del head aparte es el contenido no visible para los visitantes y guarda la keywords para clasificar en google o otro navegador. 
 
-Primero antes de comenzar el (<head>) debemos poner (<!DOCTYPE html>) este comando informa al navegador que versión de HTML se usó para escribir el documento.
+Primero antes de comenzar el (< head>) debemos poner (< !DOCTYPE html>) esta etiqueta informa al navegador que versión de HTML se usó para escribir el documento y tipo de documento. Esta etiqueta (< html lang="es">), especifica el idioma natural del contenido de una página web, en la parte de las comillas va en que idioma va estar, por ejemplo ("es") es igual al idioma español.
+
+Ahora pasamos al (< head>) para comenzar este contenido debemos abrir uno y cerrarlo con (< /head>), ahora el contenido que va adentro es: (< meta charset="UTF-8">), esta etiqueta se refiere a un conjunto de caracteres universal que incluye casi todos los caracteres de casi cualquier idioma. La siguiente etiqueta (< meta name="viewport" content="width=device-width, initial-scale=1.0">), proporciona al navegadir instrucciones sobre cómo controlas las dimensiones y la escala de la página ajustando al tamaño de la pantalla o navegador.
+
+Esta etiqueta (< script src="https://kit.fontawesome.com/02d480a03b.js" crossorigin="anonymous">< /script>), representa de la página de Fontawesome con esta ligada al head ayuda a que podremos usar sus icos en nuestra página web. Con esta etiqueta (< link rel="icon" href="book-solid.ico">), representa una ico de Fontawesome que se añadira en la pestaña de la página web, para usar esta ico se debe descargar y ponerlo en la misma carpeta donde esta nuestra página en formato html. Pasamos a la última etiqueta (< title>Documen< /title>), sirve para darle un nombre a nuestra página que saldrá en la pestaña de esta. Ahora terminado con la parte del head procedemos a cerrarlo con (< /head>).
+
+Ahora abrimos todo lo que va contenido en la página web con la etiqueta de(< body>) y al finalizar se pone otra etiqueta para cerrar (< /body>) y etiqueta a poner en el escrito ahora los usos que se puede poner son:
+
+```
+<body>
+    <h1>Tittle</h1>
+    <p>Aqui puede ir diferentes párrafos donde se puede añadir cualquier información se debe usar los mismo casi las mismas etiquetas para abrir y cerrar el párrafo solo que al final solo que se le ñade un / antes del p, esta puede ir al final del parrafo o abajo.
+    </p>
+    <br/>
+    <hr/>
+    <h3>Subtittle</h3>
+    <p>También se le puede añadir formato, <b>negrita</b> esta etiqueta pone las letra en negrita. Este otro <u>subrayado</u> esta etiqueta subraya el contenido. La última etiqueta para poner en cursiva es <i>crusiva</i>, pondrá en formato cursiva. 
+</body>
+```
+
+Una parte para poner contenido a la página web son los cuales esta en el código de arriba. Para ponerle un tñitulo principal a la página web se inicia la etiqueta con (< h1>), depués se pone el título y se cierra con (< /h1>). Esta etiqueta (< p>), sirve para poder añadir contenido de forma de un párrafo en la web y para cerrar (< /p>). La etiqueta (< br>) da un salto de línea para que los textos o párrafos no esten pegados y otra etiqueta que sirve para separa es (< hr/>), lo cual separa con una linea los párrafos.
+
+Hay 3 etiquetas principales para añadir formato a las palabras. (< b> y < /b>), dentro de esas dos etiquetas lo que ponga saldrá en negrita. Ahora las siguientes etiquetas tanto inicio y final son (< u> y < /u>), la parte de entre dos va subrayado y la última lo que va dentro de estas etiquetas es (< i> y < /i>), sale en formato cursiva. Así se acabaría estos 3 principales formatos.
+
+Muestra:
+
+![Alt text](<htmlex1.png>)
+
+Listas ordenadas y desordenadas:
+
+```
+<body>
+    <ol>
+    <li>Enlaces importantes</li>
+    <ul>
+        <li>Primer elemento de nivel 2</li>
+        <li>Segundo elemento de nivel 2</li>
+        <li>Tercer elemento de nivel 2</li>
+    </ul>
+    <li>Segundo elemento de nivel 1</li>
+    <ul>
+        <li>Primer elemento de nv 2</li>
+        <li>Segundo elemento de nv 2</li>
+        <li>Tercer elemento de nv 3</li>
+    </ul>
+    <li>Tercer elemeneto de nivel 1</li>
+    </ol>
+</body>
+```
+
+Tanto la lista ordenada y desordenada se basa se usa diferenetes etiquetas van desde el inicio para dar la forma que queremos por lo cual es separada por dos diferentes formas:
+
+Lista ordenada: Para comenzar una lista ordenada al inicio va la etiqueta (< ol>), a partir de ella hacemos enter en el teclado y abrimos una etiqueta nueva (< /li>), de esta forma cada vez que insertemos una etiqueta de li se va a enumerar en orden cada una sucesivamente de 1, 2, 3, etc. y para dar un fin se cierra con (< /ol>) para dar fin a la lista ordenada.
+
+Lista desordenada: Ahora la lista desordenada es similar la estructura pero al comenzar tiene una etiqueta diferente, se comienza con esta etiqueta (< ul>), después se vuele a dar a enter y poner de nuevo (< li> y se cierra con < /li>), ahora sucesivamente se ordenara con punto en ves de números y para cerrar la lista desordenada de pone (< /ul>), dando fin a esta.
+
+Muestra:
+
+![Alt text](htmlex2.png)
+
+Insertación de imágenes, unión de imagenes con links icons:
+
+Ahora para insertar imágenes en nuestra página web se debe tener nuestras imágenes dentro de nuestro repositori donde esta la página web. Esto llevará a tener mucho más fácil insertar las imágenes:
+
+```
+<body>
+    <img src="./img/espaguetis/cortador.png" alt="Cortar tiras" height ="100">
+    
+    <a title="Flan" href="https://www.google.com" alt="Flan" target="_blank"><img src="./img/flan/flandemanzana.png" alt="Flan de manzana" height ="100"></a>
+
+    <a title="Flan" href="./flan.html" alt="Flan" target="_blank"><img src="./img/flan/flandemanzana.png" alt="Flan de manzana" height ="100"></a>
+
+    <i class="fa-brands fa-github fa-beat" style="color: #355ea7;"></i>
+</body>
+```
+
+Hay dos formas de introducir imágenes una es sola y otra con una url para que te lleve a otra página web:
+
+Solo imagen: Ahora pasamos a insertar imágenes que tenemos guardadas en nuestro repositoria la manera correcta es (< img src="./img/espaguetis/cortador.png" alt="Cortar tiras" height ="100">), al iniciar la etiqueta pones img como representación de imágen, ponemos la ubicación de la imágen entre comillas, como dice en la guía "./", significa que esta en la misma carpeta y seguido a eso nommbre de la carpeta y si esta dentro de otra carpeta / para encontrarla y al final /nombreconformato.png y se cieera comillas sería así: "./img/espaguetis/cortador.png" al paso ponemos (alt="aqui va un texto alternativo") y si queremos ajustar un tamaño a la imagen ponemos height o weight y enter comillas en tamaño a disponer.
+
+En esta parte hay dos formas de poner enlace, una es en poner una de enlace y otra es de creación de otra página web que esta en el disco duro:
+
+Enlace de una página web en imagen: Antes de comenzar con la etiqueta de imagen, iniciamos con la etigueta de enlace (< a title="Flan" href="https://www.google.com" alt="Flan" target="_blank">), le ponemos un título  después en el href entre comillas va la direción de la página web, "alt" el texto alternativo y importante para que esa dirección web se habrá en otra página web se pone (target="blank") para el momento de hacer clic se añada otra y no se cargue en la misma, ahora se introduce toda la etiqueta de imagen que usamos en la parteinterior y cerramos con un (< /a>), el resultado final sería así (< a title="Flan" href="https://www.google.com" alt="Flan" target="_blank">< img src="./img/flan/flandemanzana.png" alt="Flan de manzana" height ="100">< /a>).
+
+Enlace de otra página con url de otro archivo html: Se hará casi el mismo procedimiento que el anterior solo que en ves de poner la url, usamos la el nomnre del archivos y formato html de otro anterior, poniendo en el href de esta manera (< a title="Flan" href="./flan.html" alt="Flan" target="_blank">< img src="./img/flan/flandemanzana.png" alt="Flan de manzana" height ="100">< /a>), así sería el resultado final, recuerda que el archivo principal debe ser index.html.
+
+Por último, al poner en la parte del head el acceso de Fontawesome, nos permitira añadir los icons de esa página por lo cual copiamos el formato de uno los icon que nos da acceso que estaría en la oarte de abajo quedaría algo similar a esto (< i class="fa-brands fa-github fa-beat" style="color: #355ea7;">< /i>).
+
+Muestra:
+
+![Alt text](htmlex3.png)
+
+Enlaces, direcciones y comentarios:
+
+```
+<body>
+    <a href="http://google.com" alt="Por aquí se va a google" target="_blank">Este es el enlcae a google</a>
+
+    <h1 id="Titulo">Asix Juan</h1>
+
+    <a href="#Titulo">Ir arriba</a>
+
+    <!--Iconoc de Gith hub-->
+</body>
+```
+
+Enlaces: Solo para insertación de nada imágenes ponemos la etiqueta de (< a href="http://google.com" alt="Por aquí se va a google" target="_blank">Este es el enlcae a google< /a>), en href y entre comillas ponemos la dirección de la página web, "alt" un breve comentario y el (target="_blank") para que se reproduzace en una página aparte y se cierra con otra etiqueta (< /a>).
+
+Direcciones para una misma página: Para esto se necesita dos partes. La primera en donde se quiere llegar se pone un identificador (< h1 id="Titulo">Asix Juan< /h1>), dentro de la primera etiqueta de de texto dentro de esa se pone id="Titulo" como ejemplo de identificador, se cierra esa etiqueta, se le escribe el contenido y se cierra con un (< /h1>) como ejemplo también se puede usar < h3>, < p>, etc. Ahora la segunda parte: Se pone como un enlace donde te llevará al id, comienza con una etiquea de < a> y dentro tiene que llevar el href y nombre de la id pero se pone un hastag para que funcione como ejemplo (< a href="#Titulo">Ir arriba< /a>) y estaría listo para que funciones.
+
+Los comentarios se puede poner dentro del programa como para tener idea de lo que hace una etiqueta y como se usa, pero esta no se vera dentro de la página web. un ejemplo sería (< !--Iconoc de Gith hub-->).
+
+Muestra:
+
+![Alt text](htmlex4.png)
+
+Tablas:
+
+```
+<body>
+ <table border="1">
+        <thead>
+            <tr>
+                <th>Puesto</th>
+                <th>Atleta</th>
+                <th>Tiempo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Puesto</td>
+                <td>Alejandro Pérez</td>
+                <td>2:01:15</td>
+            </tr>
+            <tr>
+                <td>Segundo</td>
+                <td>Torcuato García</td>
+                <td>2:12:10</td>
+            </tr>
+             <tr>
+                <td>Tercero</td>
+                <td>Wenceslao Durán</td>
+                <td>2:13:18</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Puesto</th>
+                <th>Atleta</th>
+                <th>Tiempo</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+```
+
+Las tablas sirven para empaquetar datos que nosotros queremos, como se ven una tabla se puede entre encabezado, cuerpo y pies:
+
+Para comenzar la tabla comenzamos con la etiqueta de table pero para darleun brode pronunciado en gruesor se le puede comenzar con (< table border="1">).
+Encabezado o head: Dentro de eso comenzamos la parte del head siendo la cabeza (< thead>) y para un fila de celda en la tabla se pone (< tr>) y dentro de ella comenzamos otra más (< th>) para definir una celda como encabezado de un grupo de celdas. después de poner dentro de th cerramos etiqueta con (< /th>), depués de eso cerramos la fila de celdas con (< /tr>) y cerramos el encabezado o head con la etiqueta de (< /thead>).
+
+Cuerpo o body: Ahora delitimos lo que va dentro de la tabla junto al head abrimos celdas de contenido con (< tbody>), y procedmos a abrir fila de celdas (< tr>), ponemos contenido dentro ella con la etiqueta (< td>) agregamos un contenido y cerramos con (< /td>), al terminar esas celdas y se cierra fila con (< /tr>), después de llenar la fila cerramos body con la etiqueta de (< /tbody>).
+
+Pie o foot: Por último delitamos el pie de la tabla, comenzamos a abrir la parte de celdas con (< tfood>) para inicar con las fila de celdas de etiquetas (< tr>) y dentro ella por cada fila abrimos con (< th>), para inicar otro y cerramos con (< /th>), depués de poner contenido cerramos filas de celdas con etiqueta (< /tr>) y por último la parte de esa tabla con (< /tfood>). Con todo eso introducio pasamos a cerrar toda la tabla con la etiqueta de (< /table>) y estaría terminada la tabla.
+
+Muestra:
+
+![Alt text](htmlex5.png)
+
+## Tercer capítulo: CSS
