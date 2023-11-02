@@ -108,9 +108,9 @@ Para crear una página con HTML se debe tener un head donde que detalles y ajust
 </head>
 ```
 
-En este código que se puede copiar va a medida lo que debe estar adentro del head aparte es el contenido no visible para los visitantes y guarda la keywords para clasificar en google o otro navegador. 
+En este código que se puede copiar va a medida lo que debe estar adentro del head aparte es el contenido no visible para los visitantes y guarda la keywords para clasificar en google o otro navegador.
 
-Primero antes de comenzar el (< head>) debemos poner (< !DOCTYPE html>) esta etiqueta informa al navegador que versión de HTML se usó para escribir el documento y tipo de documento. Esta etiqueta (< html lang="es">), especifica el idioma natural del contenido de una página web, en la parte de las comillas va en que idioma va estar, por ejemplo ("es") es igual al idioma español.
+Primero antes de comenzar el (< head>) debemos poner ```<!DOCTYPE html>``` esta etiqueta informa al navegador que versión de HTML se usó para escribir el documento y tipo de documento. Esta etiqueta (< html lang="es">), especifica el idioma natural del contenido de una página web, en la parte de las comillas va en que idioma va estar, por ejemplo ("es") es igual al idioma español.
 
 Ahora pasamos al (< head>) para comenzar este contenido debemos abrir uno y cerrarlo con (< /head>), ahora el contenido que va adentro es: (< meta charset="UTF-8">), esta etiqueta se refiere a un conjunto de caracteres universal que incluye casi todos los caracteres de casi cualquier idioma. La siguiente etiqueta (< meta name="viewport" content="width=device-width, initial-scale=1.0">), proporciona al navegadir instrucciones sobre cómo controlas las dimensiones y la escala de la página ajustando al tamaño de la pantalla o navegador.
 
@@ -126,13 +126,13 @@ Ahora abrimos todo lo que va contenido en la página web con la etiqueta de(< bo
     <br/>
     <hr/>
     <h3>Subtittle</h3>
-    <p>También se le puede añadir formato, <b>negrita</b> esta etiqueta pone las letra en negrita. Este otro <u>subrayado</u> esta etiqueta subraya el contenido. La última etiqueta para poner en cursiva es <i>crusiva</i>, pondrá en formato cursiva. 
+    <p>También se le puede añadir formato, <strong>negrita</strong> esta etiqueta pone las letra en negrita. Este otro <u>subrayado</u> esta etiqueta subraya el contenido. La última etiqueta para poner en cursiva es <i>crusiva</i>, pondrá en formato cursiva. 
 </body>
 ```
 
 Una parte para poner contenido a la página web son los cuales esta en el código de arriba. Para ponerle un tñitulo principal a la página web se inicia la etiqueta con (< h1>), depués se pone el título y se cierra con (< /h1>). Esta etiqueta (< p>), sirve para poder añadir contenido de forma de un párrafo en la web y para cerrar (< /p>). La etiqueta (< br>) da un salto de línea para que los textos o párrafos no esten pegados y otra etiqueta que sirve para separa es (< hr/>), lo cual separa con una linea los párrafos.
 
-Hay 3 etiquetas principales para añadir formato a las palabras. (< b> y < /b>), dentro de esas dos etiquetas lo que ponga saldrá en negrita. Ahora las siguientes etiquetas tanto inicio y final son (< u> y < /u>), la parte de entre dos va subrayado y la última lo que va dentro de estas etiquetas es (< i> y < /i>), sale en formato cursiva. Así se acabaría estos 3 principales formatos.
+Hay 3 etiquetas principales para añadir formato a las palabras. (< strong> y < /strong>), dentro de esas dos etiquetas lo que ponga saldrá en negrita. Ahora las siguientes etiquetas tanto inicio y final son (< u> y < /u>), la parte de entre dos va subrayado y la última lo que va dentro de estas etiquetas es (< i> y < /i>), sale en formato cursiva. Así se acabaría estos 3 principales formatos.
 
 Muestra:
 
