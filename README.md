@@ -10,7 +10,7 @@ Para poder inicar, comenzamos descargando el Git la cual es una nueva series de 
 
 Ahora en la web de GitHub creamos un repositorio, le ponemos un nombre, una descripción de lo que se va hacer en el repositorio, también el acceso lo ponemos público y lo muy importante añadimos el README file para poder dar margen y subir información a nuestro repositorio.
 
-![https://github.com/JuanjGomez/UF1-A3-DOCUMENTACION-MP4UF1-Apuntes/blob/main/GitHub/GitHub%20part%201.png](<GitHub part 1.png>)
+![Alt text](<GitHub part 1.png>)
 
 Ahora copiamos un enlace de nuestro repositorio creado, en nuestra CD local creamos una carpeta para GitHub, abrimos el cmd seleccionamos la carpeta donde guardaremos y ponemos ("git clone https://github.com/JuanjGomez/UF1-A3-DOCUMENTACION-MP4UF1-Apuntes.git"), así duplicaremos nuestro repositorio de la página de GitHub a nuestro sistema. Ahora podemos usar el Visual Studio Code donce podemos poner información en el README.md y lo podemos subir al repositorio con los siguientes comandos del Git.
 
