@@ -10,7 +10,7 @@ Para poder inicar, comenzamos descargando el Git la cual es una nueva series de 
 
 Ahora en la web de GitHub creamos un repositorio, le ponemos un nombre, una descripción de lo que se va hacer en el repositorio, también el acceso lo ponemos público y lo muy importante añadimos el README file para poder dar margen y subir información a nuestro repositorio.
 
-![Alt text](<GitHub part 1.png>)
+![Alt text](<./GitHub/GitHub part 1.png>)
 
 Ahora copiamos un enlace de nuestro repositorio creado, en nuestra CD local creamos una carpeta para GitHub, abrimos el cmd seleccionamos la carpeta donde guardaremos y ponemos ("git clone https://github.com/JuanjGomez/UF1-A3-DOCUMENTACION-MP4UF1-Apuntes.git"), así duplicaremos nuestro repositorio de la página de GitHub a nuestro sistema. Ahora podemos usar el Visual Studio Code donce podemos poner información en el README.md y lo podemos subir al repositorio con los siguientes comandos del Git.
 
@@ -136,7 +136,7 @@ Hay 3 etiquetas principales para añadir formato a las palabras. ```<strong>``` 
 
 Muestra:
 
-![Alt text](<htmlex1.png>)
+![Alt text](<./HTML/htmlex1.png>)
 
 Listas ordenadas y desordenadas:
 
@@ -168,7 +168,7 @@ Lista desordenada: Ahora la lista desordenada es similar la estructura pero al c
 
 Muestra:
 
-![Alt text](htmlex2.png)
+![Alt text](./HTML/htmlex2.png)
 
 Insertación de imágenes, unión de imagenes con links icons:
 
@@ -200,7 +200,7 @@ Por último, al poner en la parte del head el acceso de Fontawesome, nos permiti
 
 Muestra:
 
-![Alt text](htmlex3.png)
+![Alt text](./HTML/htmlex3.png)
 
 Enlaces, direcciones y comentarios:
 
@@ -224,7 +224,7 @@ Los comentarios se puede poner dentro del programa como para tener idea de lo qu
 
 Muestra:
 
-![Alt text](htmlex4.png)
+![Alt text](./HTML/htmlex4.png)
 
 Tablas:
 
@@ -277,6 +277,10 @@ Pie o foot: Por último delitamos el pie de la tabla, comenzamos a abrir la part
 
 Muestra:
 
-![Alt text](htmlex5.png)
+![Alt text](./HTML/htmlex5.png)
 
 ## Tercer capítulo: CSS
+
+El CSS es un lenguaje de programación muy importante que se utiliza para ordenar las intrucciones referentes a la apariencia de un sitio y presentar los contenidos de una página de forma atractiva. De este modo, HTML se emplea para estructurar el contenido de un sitio, mientras que CSS, para estructurar su presentación.
+
+El CSS tiene un nivel jerarquica de selectores, que van desde el primero hasta el último, el que tiene más poder es el nivel de abajo.
