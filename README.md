@@ -283,4 +283,167 @@ Muestra:
 
 El CSS es un lenguaje de programación muy importante que se utiliza para ordenar las intrucciones referentes a la apariencia de un sitio y presentar los contenidos de una página de forma atractiva. De este modo, HTML se emplea para estructurar el contenido de un sitio, mientras que CSS, para estructurar su presentación.
 
-El CSS tiene un nivel jerarquica de selectores, que van desde el primero hasta el último, el que tiene más poder es el nivel de abajo.
+Pero hacer que los selectores de CSS funcionen hay dos formas, la primera y menos inusual es la de usarlo dentro del mismo formato del HTML, pero para hacerlo de una mejor forma mejor y ordenado, vamos a a crear un archivo a parte en formato CSS, la uniremos a través de otra etiqueta a esa. Por ejemplo:
+
+```
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS.css" type="text/css"/>
+    <title>¿Qué es el cambio tecnológico?</title>
+</head>
+```
+
+La etiqueta ```<link rel="stylesheet" href="./CCS.css" type="text/css/"/>```, lo que hacemos con esa etiqueta es en relacionar el archivo HTML con el CSS y así dentro edel archivo CSS colocaremos los selectores y a través de ellos le daremos presentación o diferentes formatos de diseño a la página web.
+
+Ahora, dentro del CSS tiene un nivel jerarquico que va desde arriba hasta abajo, siendo los inferiores más poderosos que los primeros. También hay diferentes selectores que que tienen más poder que otros.
+
+***Selector general:**
+
+La etiqueta que afecta a toda la página web de forma general es el ```*```, dentro de esta le podemos añadir el padding left y right un 20%, lo cual llevará un formato, un margen, etc. Pero en este caso con una página web ya creará daremos ejemplo del uso del CSS. Primero, con el selector ```*```, le cambiaremos el formato a la letra, para esto tomaremos google fonts, tomamos referencia el head copiaremos la tres primeras lineas que añadimos ahí para usar el tipo de letra. Segundo usaremos el codigo de la letra, de esta forma:
+
+```
+*{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+```
+
+Con eso selector el formato de letra se cambiará en toda la págnia web.
+
+**Selectores en etiquetas:**
+
+Ahora podremos afectar directamente a una etiqueta, lo cual escribimos la etiqueta a usar, abrimos las llaves y escribimos el cambio que le queremos usar, tomando la referencia lo que tenemos en el siguiente ejemplo:
+
+```
+body{
+    background-color: bisque;
+    margin: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+```
+
+Dentro de las llaves que abrimos pusimos lo siguiente, para dar color al fondo se representa a través de: ```background-color:``` y después de los dos puntos selecionamos el color a poner, como en el ejemplo se puso "bisque". También se le coloco un margen del 5% lo cual representa en: ```margin```, lo cual, pondrá una distancia de las líneas de texto. Por último, los ```padding``` que para señalar mejor a que lado se le pone un - y añade el left o right y el porcentaje, como aquí de 20% de relleno que le pondrá a la pagina web.
+
+Ya vimos como dar formato tanto en relleno, margen y color de fondo, pero esto es un inicio, hay más formatos que se puede poner.
+
+Este otro ejemplo que se utiliza la etiqueta de ```h1```, nos dará un poco de conocimiento en el texto:
+
+```
+h1{
+    text-align: center;
+    color: blue;
+}
+```
+
+Por que se le ve hay dos estilos centradas en el texto, el ```text-align:```, sirve para dar una posición al texto, en este caso se usa un centrado, osea el "center", pero también se le puede poner un "left" o "right". El otro estilo que se puso, se trata en dar color al texto, solo se refleja en ```color:``` y se añade en ingles el color por ejemplo aquí el "blue".
+
+Vimos estilos en textos y entorno de la página web, pero también se puede añadir todo border dentro del contenido de una etiqueta, por lo tanto, añadimos otro ejemplo:
+
+```
+p{
+    border-radius: 5px;
+    border: solid green;
+}
+```
+
+Tomamos a la etiqueta ```p``` como referencia, a esta le pondremos en estilo de ```border-radius:```, con ese estilo le añadimos todo un border que llevará todo el párrafo y se le puede poner el tamaño del borde tanto en "%" y "px" que dará groso a la línea del borde. Además se le puede añadir un color con ```border:```, para que sea más visible se le añadi un "solid" para que este le estilo a la línea del borde.
+
+**Identificadores y clases:**
+
+Una manera para afectar de manera específica las etiquetas sin necesidad de tomar todos familiares a ellasm es decir si tenemos una etiquetas ```p``` y solo queremos dar estilo a uno y no a todos para ser especificos, se puede utilizar identificadores y clases.
+
+**Identificadores:** Los identificadores que proviene del HTML, quiere decir, de los id="tt" como ejemplo, lo podemos usar para tomar como referencia para darle un estilo, tomando la ayuda del "#" y junto el nombre de la id que le pusimos, por lo cual sería ```#tt```, un ejemplo de estilo que podemos dar es del siguiente ejemplo:
+
+```
+#tanteo{
+    text-decoration: underline;
+}
+```
+
+Como se ve a este ```#tanteo``` y dentro de las llaves se le puso un estilo ```text-decoration:``` que se la un agregado de "underline" uno de algunos que tiene.
+
+**Clases:** Las clases poseen casi una misma estructura a la de identificadores, pero, dentro de la etiqueta que se le dará estilo debe tener la siguiente estructura ```<em class="long>tt</em>"```, así cuando llegue el momento de darle un estilo en el CSS, se colocará de la forma que esta en el ejemplo:
+
+```
+.long{
+    background-color: yellowgreen;
+}
+```
+
+Eso solo afectará a las etiquetas que tiene la clases "long", por lo tanto, el estilo de color de fondo que se le ha colocado, solo afectará a las etiquetas que tengan esa clase.
+
+**Descendientes y hijos:**
+
+**Descendientes:** Para dar estilo a esta etiqueta, nos basamos en dos, que vendría en orden, por ejemplo de una lista ordenada, tenemos dos etiquetas la que ordena la lista que sería ```ol``` y la que nos ayuda a crear las líneas de las listas que serían ```il```, lo que el descendiente de ```ol``` es ```il```, entonces para dar un estilo de manera especifícas tomaremos la etiqueta anterior de ella. Tomamos el siguiente ejemplo:
+
+```
+ol li{
+    text-decoration:overline;
+}
+```
+
+Aquí vemos que las descendiente de ```ol``` tendrán la un estilo de texto decorativo de "overline".
+
+**Hijos:** Esta forma de dar estilo es muy similar a la de descendientes pero con la diferencia que a su estructura se le colocará una un signo de mayor, tomando otro ejemplo sería así: ```p > strong```. Un ejemplo de estilo es así:
+
+```
+p > strong{
+    color:brown;
+}
+```
+
+En el ejemplo vemos que la etiqueta padre es p y va el signo > señalando el padres y el hijo marca la etiqueta strong, dentro de las llaves va el estilo de ```color```lo cual afectara a esas etiquetas.
+
+Todos estos estilos forman parte de un formato CSS que dan una presentación o formato a una página HTML. El resultado sería este:
+
+![Alt text](./CSS/maquetadehtml.jpg)
+
+**Fuera del archivo CSS:**
+
+Ahora es verdad que podemos dar estilos a estiquetas dentro del mismo archivo HTML, pero no todo va en la etiqueta, los identificadores, clases y asteriscos deben ir dentro del head del HTML, de la misma forma que en el archivo CCS y tanto los colores, color de fondo y formato de texto, van dentro de la misma etiqueta, tomaremos de ejemplo estilos implementados en una tabla:
+
+```
+<table border="1">
+    <thead>
+        <tr style="color:red;text-align:center">
+            <th>Puesto</th>
+            <th>Atleta</th>
+            <th>Tiempo</th>
+        </tr>
+    </thead>
+    <tbody style="background-color:rgb(9, 208, 208); color:#ffff">
+        <tr>
+            <td style="color:#0000ff">Puesto</td>
+            <td style="color:red">Alejandro Pérez</td>
+            <td>2:01:15</td>
+        </tr>
+        <tr>
+            <td>Segundo</td>
+            <td>Torcuato García</td>
+            <td>2:12:10</td>
+        </tr>
+        <tr class="textorojo">
+            <td>Tercero</td>
+            <td>Wenceslao Durán</td>
+            <td>2:13:18</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr class="textorojo">
+            <th>Puesto</th>
+            <th>Atleta</th>
+            <th>Tiempo</th>
+        </tr>
+    </tfoot>
+</table>
+```
+
+Por lo tanto el resultado de la tabla será el siguiente:
+
+![Alt text](./CSS/Tablarsult.png)
+
+## Cuarto Capitulo: DISEÑO RESPONSIVE
