@@ -560,3 +560,5 @@ En esta parte vemos los principales que se usa para implementación de las imág
 El ```background-position:center```, establece la posición relativa a la capa de posición establecida, junto al ```center```, pone la posición de la imagen hacia el centro del contenedor o de la páginas. El ```background-attachment: fixed```, pone la posición de una imagen de fondo que es fija dentro de la ventana gráfica o se desplaza con su bloque contenedor, con el ```fixed```, pone el fondo fijo en relación con la página web, hasta con un mecanismo de movimiento, haciendo que el fondo no se mueva con el elemento.
 
 ![Alt text](./Diseño%20Responsive/responsive5.png)
+
+Hecho con mucho esfuerzo de lo aprendido en clase.
