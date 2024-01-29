@@ -466,4 +466,97 @@ En el diseño responsive utiliza CSS y HTML para redimensionar, ocultar, encoger
 
 Recordemos que mayormente el usso del diseño responsive se usa mucho la etiqueta de ```div```, que a la vez también puede ser la etiquetas ```section```, ```article```, etc. A estos contenedores servirá para desplazar, dar tamaño, ajustar.
 
-El primero que comando importante a implementar es la construcciones de bloques, 
+El primero que comando a mostrar es muy importante debido que lleva a la implementación y construcciones de bloques, es el ```display```, se colocaría como este ejemplo:
+
+```
+.flex{
+    display: flex;
+}
+```
+
+Este comando ayuda a colocar cada caja osea div como si fueran celdas de tablas, con un comportamiento predecible y adaptable, solucionando los problemas de control de diseño y se adapte facilmente a los diferentes dispositivos.
+
+Otro importante es el ```float```, este elemento coloca en el lado izquierdo o derecho de su contenedor, lo que permite que el texto y los elementos en línea se ajustan a su alrededor. Por ejemplo:
+
+```
+#left{
+    float: left;
+}
+```
+
+Como se explico en la parte de arriba se ajustaría suponiendo de la posición para la izquierda o la derecha, ajustando con ello el contenedor.
+
+![Alt text](./Diseño%20Responsive/responsive4.png)
+
+El ```box-sizing```, sirve para recalcular la medida del border y el padding con respecto al tamaño del contenido. Por ejemplo:
+
+```
+*{
+    box-sizing: border-box;     
+    font-weight: 300;
+    font-style: normal;
+}
+```
+
+En este ejemplo se usa el ```box-sizing: border-box```, le dice al navegador que tenga en cuenta cualquier borde y relleno de los valores que especifique para el ancho y alto de un elemento, ayudando a hacer más facil en dimensionar los elementos. Pero,también se puede usar el ```content-box```, establece el ancho de un elemento a 100 pixeles, por lo que al cuadrado de contenido del elemento le dará 100 pixeles de ancho y de ancho de cualquier borde o relleno que se agrego.
+
+**Propiedades de control de la alineación:**
+
+Hay diferentes comandos para realizar la alineación de la página web, uno de ellos viene a ser el ```aling-items``` que controla la alineación de todos los elementos en el eje transversal. Por ejemplo:
+
+```
+.flex{
+    align-items: center;
+}
+```
+
+Mostrará todo el contenido del contenedor en el espacio del medio, como también se puede variar en center por un "flex-start, que pondrá en la posición de superio de  los contenedores. También un "flex-end" que lo colocará en la posición inferior del contenedor, los div que estan dentro de el.
+
+![Alt text](./Diseño%20Responsive/responsive1.png)
+
+Ahora pasamos a la parte del ```flex-direction```, esto significa que el eje principal corre a lo largo de fila horizontalmente y nuestra alineación del eje transversal mueve los elementos hacia arriba y hacia abajo. Como ejemplo:
+
+```
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+}
+```
+
+Como marca aquí lleva un ```display:flex```, que alineará el contenido del contenedor, ```flex-direction: column```, que ayudará a alinear a través de una columna el contenedor donde se guarda los demás div. El ```align-items: flex-start```, que pondrá la ubicación de donde irá el contenido del contenedor, así ordenando cada div de adentro. Por último va un ```width: 200px```, el width ayuda a controlar el tamaño del contenedor, en el caso que sea muy grande o tal vez muy pequeño.
+
+![Alt text](./Diseño%20Responsive/responsive2.png)
+
+Otro comando que nos puede ayuda en lo que viene hacer el justificado de página web, siendo algo simiñar a lo visto anteriormente, pero ```justify-content```, se define como el navegador distribuye el espacio entre y alrededor de los elementos de contenido a lo largo del eje principal de un contenedor felxible y el eje en línea de un contenedor cuadrícula. Además este puede tener varias opciones, por ejemplo;
+
+```
+.box{
+    justify-content: start;
+}
+```
+
+El ```start```, sirve para empaquetar al ras entre sí hacia el borde inicial del contenedor de alineación en el eje principal. También el "start" puede ser cambiado por otras opciones como la de ```end```, empaqueta a ras hacia el borde final del contenedor de alineación en el eje principal, etc.
+
+![Alt text](./Diseño%20Responsive/responsive3.png)
+
+**Utilización para imágenes:**
+
+Para hacer una imagen sea responsive se le pueda diferentes formatos y estilos, se le puede dar un valor a su propiedad de anchura. La altura de la imagen se ajustará automáticamete. Lo importante es saber que siempre debes utilizar unidades relativas para la propiedad de anchura, como porcentaje, en lugar de las absolutas, como los píxeles.
+
+```
+header{
+    height: 100vh;
+    background-image: url(../img/brandon-burridge-4o7f9_Z73a4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+```
+
+En esta parte vemos los principales que se usa para implementación de las imágenes, en primer lugar esta un ```background-image: url(./xxxx/xxxxx.png)```, establece una o más imágenes de fondo en un elemento como en el fondo de l página, podiendo poner de forma predeterminada. En segundo lugar, acompañado de una url que mostra la ubicación de la imagen. El ```background-size: cover```, hace que la imagen se pueda dejar de tamaño natural al momento de estirarla par que se ajuste al espacio disponible, con el ```cover```, ayuda en la escala de la imagen, al tamaño más pequeño posible de llenar el contenedor, sin dejar espacios vacios.
+
+El ```background-position:center```, establece la posición relativa a la capa de posición establecida, junto al ```center```, pone la posición de la imagen hacia el centro del contenedor o de la páginas. El ```background-attachment: fixed```, pone la posición de una imagen de fondo que es fija dentro de la ventana gráfica o se desplaza con su bloque contenedor, con el ```fixed```, pone el fondo fijo en relación con la página web, hasta con un mecanismo de movimiento, haciendo que el fondo no se mueva con el elemento.
+
+![Alt text](./Diseño%20Responsive/responsive5.png)
