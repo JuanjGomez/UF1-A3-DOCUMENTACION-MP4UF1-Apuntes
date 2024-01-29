@@ -446,4 +446,24 @@ Por lo tanto el resultado de la tabla será el siguiente:
 
 ![Alt text](./CSS/Tablarsult.png)
 
+**CSS más utilizados:**
+
+Como se puede mostrar a cada selector, id, clase, etiqueta, tiene un montón de opciones para poder das estilos y dar un margen a cada uno de ellos, por ejemplo para cambiar el color a a las letras y hasta a linea de un borde de cuadro, se puede usar un : ```p{color:red;}```, según el color indicado afectará aquel texto o línea, siguiendo los colores para añadir un color a un fondo de una página o letras para poder tratar de dar un resaltado se puede utilizar un ```p{background-color:yellow;}```, así afectará a todas las etiquetas p con un color a todo el fondo que puede abarcar.
+
+Otros estilos utilizados también son la creación de cuadros, para esta se puede utilizar un: ```p{border: 1px brown solid}```, en este estilo marca el grosor de la linea para el cuadro que se muestra a través de "1px", de ahí se puede añadir un color para darle y por últimp un "solid", este es importante para que se pueda ver la línea en la página web. Además se puede utilizar un ```p{border-radius: 30px}```, sirve para forma un poco redondeada la esquina dando una apariencia de frencuencia del círculo.
+
+También podemos afectar el contenido de la página, un punto importante las letras, por ejemplo para dar un tamaño a las letra podemos usar el estilo de: ```p{font-size:16px;}```, permite dar un tamaño de "16 pixeles" a letra de la etiqueta indicada. También el alineado del texto, nos serirá para darle sangría a la izquierda, derecha o centro, a través del siguiente comando: ```p{text-align:center;}``` en este caso hará que el texto del párrafo este siempre pegado al medio.Además, uso de decoraciónse podrá usar también, como poner un subrayado, delineado arriba tachado se puede utilizar con el estilo de: ```p{text-decoration:underline}```, eso servirá como un subrayado, pero puede ser cambiado por un "overline" o "dotted".
+
+Relacionado al cuerpo de la página web se puede implementar unos estilos principales, el primero de ellos es el margen que de los lados con otros por medio del exterior del ```div```, ```body``` o textos, con un ejemplo de etiqueta: ```div{margin:0%}```, este estilo implica que no halla una separación de un cuadro con otro, sino que todo estará junto. Otro es el ```padding``` designará un espacio en el interior del cuadro, para que el texto no este pegado a los lado, su estructura serí así ```div{padding: 5px;}```, aquí quiere dejar claro que habrá un espacio en el interior del contenido de 5 pixeles, pero también se puede marca un lado en especifico, como un ```padding-left```, ```padding-right```, etc.
+
 ## Cuarto Capitulo: DISEÑO RESPONSIVE
+
+El diseño responsive es una técnica de diseño web que permite que un sitio web se ajuste automáticamente al tamaño y la resolución de la pantalla del dispositivo desde el cual se está accediendo. Esto significa que, sin importar si un usuario está navegando desde un ordenador, un portátil, una tablet o un smartphone, la página web se mostrará de manera clara, legible y fácil de navegar.
+
+En el diseño responsive utiliza CSS y HTML para redimensionar, ocultar, encoger o ampliar estos elementos HTML para que se adapte a la pantalla de cualquier dispositivo.
+
+**Comandos de DISEÑO RESPONSIVE:**
+
+Recordemos que mayormente el usso del diseño responsive se usa mucho la etiqueta de ```div```, que a la vez también puede ser la etiquetas ```section```, ```article```, etc. A estos contenedores servirá para desplazar, dar tamaño, ajustar.
+
+El primero que comando importante a implementar es la construcciones de bloques, 
