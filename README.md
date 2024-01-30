@@ -561,4 +561,24 @@ El ```background-position:center```, establece la posición relativa a la capa d
 
 ![Alt text](./Diseño%20Responsive/responsive5.png)
 
+**Mediaquery:**
+
+Las Media queries permiten aplicar esrilos CSS según el tipo general de un dispositivo, lo cúal va por el tamaño de pantalla u otras características como la resolución de la pantalla o del ancho del viewport del navegador. Tomando el siguiente ejemplo:
+
+```
+@media only screen and (max-width: 700px){
+/* REGLAS */
+.column-3{
+    width: 100%;
+}
+.column-4{
+    width: 50%;
+}
+}
+```
+
+En este caso la ```@media```, asocia un grupo de declaraciones anidadas, en un bloque CSS delimitada por llaves, con una condición definida con el media query. Esta regla es usada con el ```screen```, destina a aplicar el tamaño de los contenedores según el tamaño designado ya la pantalla sea grande o pequeña.
+
+![Alt text](./Diseño%20Responsive/Media-Queries.png)
+
 Hecho con mucho esfuerzo de lo aprendido en clase.
