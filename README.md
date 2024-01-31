@@ -73,14 +73,16 @@ Para añadir un enlace al repositorio se hace de esa manera, ahora al inicio se 
 
 Ahora para poner una imagen y que este a la vez sea una enlace para entrar a otra página, primero se debe guardar una imagen en el carpeta de nuestro repositorio, luego subimos con los comandos del git en el cmd. Para entonces ya tendremos la imagen en nuestro repositorio, vamos ahi, copiamos el enlace de la imagen y acontinuación. se pone un signo de exclamación al inicio, ahora se abre corchete ([Aqui va un nombre a la imagen]), después se abre parentesis (Aqui va pegado el enlace "Comentario de la imagen"), dentro de los parentesis se pone el enlace y seguido entre comillas un comentario que salga de esa enlace-imagen.
 
+```
 |Primera Col.|Segunda Col.|3 Col|
 |---------------|:------------:|---------:|
 |Col 2 es|Centrada|35€|
 |Col 3 es|Derecha|123€|
 |Estilo Cebra|Gris|Blanco|
 |Clase|ASIX1|M4|
+```
 
-Ahora la introducción de tablas, en la primera línea como hroizontal van los nombres, en la segunda los guiones representa la cantidad de espacio que de da a cada uno también se puede alinear el texto al centro, izquierda y derecha. por ejemplo (|---------|) es izquierda, (:--------:) es centrada, (--------:) es derecha. Después de eso se pone la información en cada una de las columnas de la manera vertical, siempre dando margen con | para hacer la tabla y se le puede poner un estilo de colores asignando de esta manera (|Estilo cerba|Amarillo|azul|) de esa manera dará colores diferentes.
+Ahora la introducción de tablas, en la primera línea como hroizontal van los nombres, en la segunda los guiones representa la cantidad de espacio que de da a cada uno también se puede alinear el texto al centro, izquierda y derecha. por ejemplo ```(|---------|)``` es izquierda, ```(:--------:)``` es centrada, ```(--------:)``` es derecha. Después de eso se pone la información en cada una de las columnas de la manera vertical, siempre dando margen con | para hacer la tabla y se le puede poner un estilo de colores asignando de esta manera ```(|Estilo cerba|Amarillo|azul|)``` de esa manera dará colores diferentes.
 
 -[ ] Opción A
 
